@@ -1,12 +1,15 @@
 :root {
   /* fonts types*/
+
 --font-main: 'Roboto', sans-serif;
 --font-second: 'Raleway', sans-serif;
 
 /* text colors */
+
 --txt-main-cl: color: #212121;
 
 /* background colors*/
+
 --bg-color-dark: #2f303a;
 --bg-color-light: #f5f4fa;
 }
@@ -15,6 +18,10 @@ body {
   color: var(--font-main);
 }
 /* reset styles */
+
+ul {
+  list-style: none;
+}
 .link {
   text-decoration: none;
   color: currentColor;
@@ -23,11 +30,11 @@ body {
 /* ----------HEADER---------- */
 
 .header-label {
-  font: var(--font-second);
+  font-family: var(--font-second);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 21);
+  line-height: calc(31 /26);
   letter-spacing: 0.03em;
 }
 .label-black {
@@ -39,12 +46,18 @@ body {
 .label-white {
   color: #ffffff;
 }
-.header-text-one,
+.header-text-one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
 .header-text-two {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  color: #757575;
 }
 .uniform-link:hover,
 .uniform-link:focus,
@@ -77,7 +90,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color:  #2a7cbe;
+  background-color:  #188ce8;
 }
 .unnamed-title,
 .what-title {
@@ -128,11 +141,11 @@ body {
   background-color: var(--bg-color-dark);
 }
 .footer-label {
-  font: var(--font-second);
+  font-family: var(--font-second);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,19;
+  line-height: calc(31 /26);
   letter-spacing: 0.03em;
 }
 .label-white {
